@@ -13,6 +13,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMenu.css">
 
 </head>
 <body>
@@ -24,11 +25,11 @@
     <a href="#" class="logo"><i class="fas fa-utensils"></i>Fatti</a>
 
     <nav class="navbar">
-        <a class="active" href="index.html">Inicio</a>
-        <a href="reservacion.html">Reservar</a>
+        <a  href="index.html">Inicio</a>
+        <a  href="reservacion.html">Reservar</a>
         <a href="menu.html">Menu</a>
-        <a href="#order">Platos</a>
-        <a href="iniciarSesion.html">Iniciar Sesión</a>
+        <a href="platos.html">Platos</a>
+        <a class="active" href="iniciarSesion.html">Iniciar Sesión</a>
     </nav>
 
     <div class="icons">
@@ -47,45 +48,31 @@
     <label for="search-box" class="fas fa-search"></label>
     <i class="fas fa-times" id="close"></i>
 </form>
+<section id="book-a-table" class="book-a-table">
+    <div class="container">
 
-<!-- home section starts  -->
+      <div class="section-title">
+        <h2>Iniciar <span>Sesion</span></h2>
+        
+      </div>
 
-<section class="home" id="home">
-
-    <div class="swiper-container home-slider">
-
-        <div class="swiper-wrapper wrapper">
-
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Plato Especial</span>
-                    <h3>Spaghetti</h3>
-                    <p>Nuestra salsa es preparada diariamente, cada mañana.</p>
-                    <a href="#" class="btn">Ordenar</a>
-                </div>
-                <div class="image">
-                    <img src="images/home-img-1.png" alt="">
-                </div>
-            </div>
-
-
-            <div class="swiper-slide slide">
-                <div class="content">
-                    <span>Plato Especial</span>
-                    <h3>Pizza</h3>
-                    <p>Nuestros chefs crean platillos, sopas y salsas a mano, desde cero, todos los días.</p>
-                    <a href="#" class="btn">Ordenar</a>
-                </div>
-                <div class="image">
-                    <img src="images/home-img-3.png" alt="">
-                </div>
-            </div>
-
-        </div>
+      <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Contraseña" data-rule="email" data-msg="Please enter a valid email">
+            <div class="validate"></div>
+          </div>
+        <div class="btn1" ><button type="submit">Iniciar Sesion</button></div>
+        <br>
+        <div class="btn2" ><button type="submit">Registrarse</button></div>
+      </form>
 
     </div>
-
-</section>
+  </section><!-- End Book A Table Section -->
 
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

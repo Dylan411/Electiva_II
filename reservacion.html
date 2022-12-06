@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatti</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleMenu.css">
+
+</head>
+<body>
+    
+<!-- header section starts      -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>Fatti</a>
+
+    <nav class="navbar">
+        <a  href="index.html">Inicio</a>
+        <a class="active" href="reservacion.html">Reservar</a>
+        <a href="menu.html">Menu</a>
+        <a href="platos.html">Platos</a>
+        <a href="iniciarSesion.html">Iniciar Sesión</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+    </div>
+
+</header>
+
+<!-- header section ends-->
+
+<!-- search form  -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+<section id="book-a-table" class="book-a-table">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Reservar una <span>Mesa</span></h2>
+        
+      </div>
+
+      <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3">
+            <input type="text" name="date" class="form-control" id="date" placeholder="Fecha" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3">
+            <input type="text" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group mt-3">
+            <input type="number" class="form-control" name="people" id="people" placeholder="# de Personas" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Mensaje"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="mb-3">
+          <div class="loading">Cargando</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Su solicitud de reserva fue enviada. Le devolveremos la llamada o le enviaremos un correo electrónico para confirmar su reserva. ¡Gracias!</div>
+        </div>
+        <div class="text-center"><button type="submit">Reservar</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Book A Table Section -->
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
